@@ -1,0 +1,31 @@
+{
+  "name": "grid-flexbox-admin-dashboard",
+  "version": "1.0.0",
+  "description": "git@github.com:marcosdefontes/grid-flexbox-admin-dashboard.git",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosdefontes/grid-flexbox-admin-dashboard.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "flexbox",
+    "grid"
+  ],
+  "author": "Marcos Freire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcosdefontes/grid-flexbox-admin-dashboard/issues"
+  },
+  "homepage": "https://github.com/marcosdefontes/grid-flexbox-admin-dashboard#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.0"
+  }
+}
