@@ -8,12 +8,15 @@ header {
   align-items: stretch;
   display: flex;
   h2.titles {
-    margin: 0;
+    margin: 0.2rem 0 0;
   }
 
   .title-wrapper {
     flex-grow: 1;
+    position: relative;
     .breadcrumb {
+      bottom: 0;
+      position: absolute;
       ul,
       li + li {
         margin: 0;
