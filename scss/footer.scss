@@ -1,4 +1,5 @@
-footer{
-   min-height: $footerMinSize;
-   background-color: $footerBgColor;
+footer.footer {
+  min-height: $footerMinSize;
+  background-color: $footerBgColor;
+  border-top: 3px dashed $mainBgColor;
 }

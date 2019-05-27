@@ -1,20 +1,34 @@
-// Header
-$headerSize: 60px;
-$headerBgColor: #4b7bec;
+$fontSize: 16px;
 
 // Main
-$mainBgColor: #d1d8e0;
+$mainBgColor: #dce0e4;
+
+// Header
+$headerSize: 3.75rem;
+$headerBgColor: lighten($mainBgColor, 5%);
+$headerBgColorGradient: linear-gradient(
+  90deg,
+  $headerBgColor 73%,
+  $mainBgColor 100%
+);
 
 // Footer
-$footerMinSize: 150px;
+$footerMinSize: 10rem;
 $footerBgColor: #a5b1c2;
+
+// SideMenu
+$sideMenuSize: 15rem;
+$sideMenuBgColor: #4b7bec;
+$sideMenuBgColorGradient: linear-gradient(90deg, #4b7bec 13%, #3867d6 100%);
 
 // Imports
 @import "header.scss";
 @import "main.scss";
 @import "footer.scss";
+@import "menu.scss";
 
 html {
+  font-size: $fontSize;
   height: 100%;
   overflow: auto;
   body,
@@ -25,5 +39,6 @@ html {
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-left: $sideMenuSize;
   }
 }
