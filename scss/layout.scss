@@ -1,5 +1,29 @@
-$headerSize: 150px;
-$footerMinSize: 150px;
+// Header
+$headerSize: 60px;
+$headerBgColor: #4b7bec;
 
-@import 'header.scss';
-@import 'footer.scss';
+// Main
+$mainBgColor: #d1d8e0;
+
+// Footer
+$footerMinSize: 150px;
+$footerBgColor: #a5b1c2;
+
+// Imports
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+
+html {
+  height: 100%;
+  overflow: auto;
+  body,
+  .app {
+    height: 100%;
+  }
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

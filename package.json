@@ -4,7 +4,7 @@
   "description": "git@github.com:marcosdefontes/grid-flexbox-admin-dashboard.git",
   "main": "index.html",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "build-css": "node-sass --include-path scss scss/index.scss   public/css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -27,5 +27,8 @@
   "devDependencies": {
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "bulma": "^0.7.5"
   }
 }

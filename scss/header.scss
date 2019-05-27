@@ -1,4 +1,5 @@
-
-header{
-   height: $headerSize;
+header {
+  height: $headerSize;
+  min-height: $headerSize;
+  background-color: $headerBgColor;
 }
