@@ -12,6 +12,7 @@ header {
   }
 
   .title-wrapper {
+    flex-grow: 1;
     .breadcrumb {
       ul,
       li + li {
@@ -26,9 +27,30 @@ header {
   .navbar-user {
     align-items: center;
     display: flex;
-    flex-grow: 1;
+    flex-grow: 3;
     flex-shrink: 0;
     justify-content: flex-end;
+    .dropdown {
+      align-items: center;
+      display: flex;
+      .dropdown-trigger {
+        display: flex;
+        align-items: center;
+        button.button {
+          height: $headerSize;
+          background: transparent;
+          border: none;
+        }
+      }
+    }
+    .user-avatar {
+      margin: 0 0.5625rem 0 0;
+      img {
+        max-height: 2.625rem;
+        height: 2.625rem;
+        border-radius: 290486px;
+      }
+    }
   }
 }
 

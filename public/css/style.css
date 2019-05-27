@@ -7014,17 +7014,35 @@ header {
   display: flex; }
   header h2.titles {
     margin: 0; }
-  header .title-wrapper .breadcrumb ul,
-  header .title-wrapper .breadcrumb li + li {
-    margin: 0; }
-  header .title-wrapper .breadcrumb li {
-    font-size: 0.8rem; }
+  header .title-wrapper {
+    flex-grow: 1; }
+    header .title-wrapper .breadcrumb ul,
+    header .title-wrapper .breadcrumb li + li {
+      margin: 0; }
+    header .title-wrapper .breadcrumb li {
+      font-size: 0.8rem; }
   header .navbar-user {
     align-items: center;
     display: flex;
-    flex-grow: 1;
+    flex-grow: 3;
     flex-shrink: 0;
     justify-content: flex-end; }
+    header .navbar-user .dropdown {
+      align-items: center;
+      display: flex; }
+      header .navbar-user .dropdown .dropdown-trigger {
+        display: flex;
+        align-items: center; }
+        header .navbar-user .dropdown .dropdown-trigger button.button {
+          height: 4.5rem;
+          background: transparent;
+          border: none; }
+    header .navbar-user .user-avatar {
+      margin: 0 0.5625rem 0 0; }
+      header .navbar-user .user-avatar img {
+        max-height: 2.625rem;
+        height: 2.625rem;
+        border-radius: 290486px; }
 
 .menu-toggler {
   width: 3.125rem;
