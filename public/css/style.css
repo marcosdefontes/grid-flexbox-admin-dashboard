@@ -7000,8 +7000,8 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #a5b1c2;
-  padding: 3rem 1.5rem 6rem; }
+  background-color: #b12c37;
+  padding: 2rem 1rem; }
 
 header {
   height: 4.5rem;
@@ -7058,12 +7058,41 @@ main {
   padding: 2rem 1rem; }
 
 footer {
-  background-color: #a5b1c2;
-  border-top: 3px dashed #dce0e4; }
+  border-top: 3px dashed #dce0e4;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  footer div {
+    flex-grow: 1; }
+  footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center; }
+    footer .footer-links div {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 4rem;
+      color: #e9a7ac; }
+      footer .footer-links div svg,
+      footer .footer-links div .svg-inline--fa,
+      footer .footer-links div i.fa {
+        width: 2rem;
+        margin: 1rem; }
+      footer .footer-links div a {
+        color: #e9a7ac;
+        font-weight: bold; }
+  footer .footer-copyright {
+    text-align: right;
+    color: #df7e86;
+    font-size: 0.85rem; }
 
 aside#side-menu {
   background: #4b7bec;
-  background: linear-gradient(90deg, #4b7bec 13%, #3867d6 100%);
+  background: linear-gradient(135deg, #1e4f85 0%, #7cade2 100%);
   width: 15rem;
   height: 100%;
   float: left; }
