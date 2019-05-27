@@ -1,0 +1,21 @@
+// Imports
+@import "header";
+@import "content";
+@import "footer";
+@import "menu";
+
+html {
+  font-size: $fontSize;
+  height: 100%;
+  overflow: auto;
+  body,
+  .app {
+    height: 100%;
+  }
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: $sideMenuSize;
+  }
+}

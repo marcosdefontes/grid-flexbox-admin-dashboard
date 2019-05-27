@@ -7000,7 +7000,7 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #fafafa;
+  background-color: #a5b1c2;
   padding: 3rem 1.5rem 6rem; }
 
 header {
@@ -7057,8 +7057,7 @@ main {
   flex: 1;
   padding: 2rem 1rem; }
 
-footer.footer {
-  min-height: 10rem;
+footer {
   background-color: #a5b1c2;
   border-top: 3px dashed #dce0e4; }
 
