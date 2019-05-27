@@ -5,9 +5,8 @@ header {
   background: $headerBgColorGradient;
   border-bottom: 1px solid #d1d8e0;
   padding: 0.2rem 1rem;
+  align-items: stretch;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   h2.titles {
     margin: 0;
   }
@@ -22,6 +21,14 @@ header {
         font-size: 0.8rem;
       }
     }
+  }
+
+  .navbar-user {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-end;
   }
 }
 

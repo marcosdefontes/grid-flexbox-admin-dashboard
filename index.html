@@ -35,7 +35,40 @@
               <li><a href="#">Components</a></li>
             </ul>
           </nav>
+        </div>
+        <div class="navbar-user">
+          <div class="dropdown is-right" id="dropdown-notifications">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu-notifications">
+                <i class="fas fa-bell" title="Notifications"></i>
+              </button>
 
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu-notifications" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown is-right is-hoverable">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                <span>Hover me</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -95,6 +128,8 @@
       </footer>
     </div>
   </div>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

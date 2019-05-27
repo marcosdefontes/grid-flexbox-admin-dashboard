@@ -7010,9 +7010,8 @@ header {
   background: linear-gradient(90deg, #eaedef 73%, #dce0e4 100%);
   border-bottom: 1px solid #d1d8e0;
   padding: 0.2rem 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
+  align-items: stretch;
+  display: flex; }
   header h2.titles {
     margin: 0; }
   header .title-wrapper .breadcrumb ul,
@@ -7020,6 +7019,12 @@ header {
     margin: 0; }
   header .title-wrapper .breadcrumb li {
     font-size: 0.8rem; }
+  header .navbar-user {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-end; }
 
 .menu-toggler {
   width: 3.125rem;
