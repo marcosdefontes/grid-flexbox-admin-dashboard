@@ -45,6 +45,19 @@ header {
           border: none;
         }
       }
+      .dropdown-menu {
+        padding: 0;
+        .dropdown-content {
+          background: ligthen($mainBgColor, 10%);
+          border-radius: 0px 0px 6px 6px;
+          box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+          .dropdown-item i.fa,
+          svg {
+            width: 1.05rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
     }
     .user-avatar {
       margin: 0 0.5625rem 0 0;
