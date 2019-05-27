@@ -7004,11 +7004,21 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 header {
-  height: 3.75rem;
-  min-height: 3.75rem;
+  height: 4.5rem;
+  min-height: 4.5rem;
   background: #eaedef;
   background: linear-gradient(90deg, #eaedef 73%, #dce0e4 100%);
-  border-bottom: 1px solid #d1d8e0; }
+  border-bottom: 1px solid #d1d8e0;
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center; }
+  header h2.titles {
+    margin: 0; }
+  header .title-wrapper .breadcrumb ul,
+  header .title-wrapper .breadcrumb li + li {
+    margin: 0; }
+  header .title-wrapper .breadcrumb li {
+    font-size: 0.8rem; }
 
 main {
   background-color: #dce0e4;
