@@ -7013,7 +7013,9 @@ header {
   align-items: stretch;
   display: flex; }
   header h2.titles {
-    margin: 0.2rem 0 0; }
+    margin: 0.2rem 0 0;
+    font-weight: 300;
+    color: #273c75; }
   header .title-wrapper {
     flex-grow: 1;
     position: relative; }
@@ -7217,6 +7219,7 @@ aside#side-menu {
 
 #main-menu {
   font-weight: 300;
+  font-size: 0.9rem;
   padding: 0; }
   #main-menu a {
     color: #ffffff;
