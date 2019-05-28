@@ -1,3 +1,6 @@
+$arrowColor: lighten(#1e4f85, 40%);
+$activatedColor: #f7b731;
+
 aside#side-menu {
   background: $sideMenuBgColor;
   background: $sideMenuBgColorGradient;
@@ -13,9 +16,6 @@ aside#side-menu {
 #main-menu {
   font-weight: 300;
   padding: 0;
-  & > ul {
-    margin: 1rem 0rem;
-  }
   a {
     color: #ffffff;
     line-height: 2.5rem;
@@ -37,7 +37,7 @@ aside#side-menu {
     a {
       padding: 0 1rem;
       span.arrow {
-        border: solid $headerBgColor;
+        border: solid $arrowColor;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
@@ -87,6 +87,18 @@ aside#side-menu {
     .submenu {
       display: none;
       background: rgba(75, 101, 133, 0.6);
+    }
+  }
+
+  li.active {
+    background: rgba(75, 101, 133, 0.6);
+    font-weight: 400;
+    a {
+      color: $activatedColor;
+    }
+    i.fa:first-child,
+    svg:first-child {
+      color: $activatedColor;
     }
   }
 }

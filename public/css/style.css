@@ -7140,8 +7140,6 @@ aside#side-menu {
 #main-menu {
   font-weight: 300;
   padding: 0; }
-  #main-menu > ul {
-    margin: 1rem 0rem; }
   #main-menu a {
     color: #ffffff;
     line-height: 2.5rem;
@@ -7160,7 +7158,7 @@ aside#side-menu {
     #main-menu li.item a {
       padding: 0 1rem; }
       #main-menu li.item a span.arrow {
-        border: solid #eaedef;
+        border: solid #8ab5e5;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
@@ -7183,6 +7181,14 @@ aside#side-menu {
     #main-menu li.item .submenu {
       display: none;
       background: rgba(75, 101, 133, 0.6); }
+  #main-menu li.active {
+    background: rgba(75, 101, 133, 0.6);
+    font-weight: 400; }
+    #main-menu li.active a {
+      color: #f7b731; }
+    #main-menu li.active i.fa:first-child,
+    #main-menu li.active svg:first-child {
+      color: #f7b731; }
 
 @keyframes slide-right {
   0%,
