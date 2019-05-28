@@ -7103,9 +7103,8 @@ footer {
     flex-grow: 1; }
   footer .footer-links {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center; }
+    flex-direction: row;
+    flex-wrap: wrap; }
     footer .footer-links div {
       display: flex;
       flex-grow: 1;
