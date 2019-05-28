@@ -7133,6 +7133,8 @@ aside#side-menu {
   position: fixed;
   min-height: 100%;
   float: left; }
+  aside#side-menu .brand {
+    height: 4.5rem; }
 
 html {
   font-size: 16px;

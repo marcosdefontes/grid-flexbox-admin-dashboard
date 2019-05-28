@@ -5,4 +5,7 @@ aside#side-menu {
   position: fixed;
   min-height: 100%;
   float: left;
+  .brand {
+    height: $headerSize;
+  }
 }
