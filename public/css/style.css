@@ -7157,13 +7157,6 @@ aside#side-menu {
       text-align: center; }
   #main-menu li.item {
     cursor: pointer; }
-    #main-menu li.item:hover {
-      background: rgba(75, 101, 133, 0.6); }
-    #main-menu li.item.opened {
-      background: rgba(75, 101, 133, 0.6); }
-      #main-menu li.item.opened a span.arrow {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg); }
     #main-menu li.item a {
       padding: 0 1rem; }
       #main-menu li.item a span.arrow {
@@ -7171,17 +7164,39 @@ aside#side-menu {
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
         position: absolute;
         right: 1rem; }
+      #main-menu li.item a:hover {
+        border-left: 0.2rem solid #a5b1c2; }
+    #main-menu li.item:not(.opened) a span.arrow {
+      transform: rotate(-45deg); }
+    #main-menu li.item:not(.opened) a:hover span.arrow {
+      animation: slide-right 0.5s ease-in-out infinite; }
+    #main-menu li.item.opened {
+      background: rgba(75, 101, 133, 0.6); }
+      #main-menu li.item.opened a span.arrow {
+        transform: rotate(45deg); }
+      #main-menu li.item.opened a:hover span.arrow {
+        animation: slide-up 0.5s ease-in-out infinite; }
     #main-menu li.item.opened .submenu {
       display: block; }
-  #main-menu .submenu {
-    display: none;
-    background: rgba(75, 101, 133, 0.6); }
-    #main-menu .submenu ul > li:hover {
-      background: rgba(75, 101, 133, 0.7); }
+    #main-menu li.item .submenu {
+      display: none;
+      background: rgba(75, 101, 133, 0.6); }
+
+@keyframes slide-right {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(-45deg); }
+  50% {
+    transform: translate(0.2rem, 0) rotate(-45deg); } }
+
+@keyframes slide-up {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(-135deg); }
+  50% {
+    transform: translate(0, 0.2rem) rotate(-135deg); } }
 
 html {
   font-size: 16px;
