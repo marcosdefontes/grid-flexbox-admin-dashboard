@@ -338,7 +338,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 code,
 pre {
@@ -881,13 +881,13 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Lato", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Lato", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Lato", sans-serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -7095,6 +7095,7 @@ main {
   padding: 2rem 1rem; }
 
 footer {
+  font-weight: 300;
   border-top: 3px dashed #dce0e4;
   display: flex;
   flex-direction: row;
@@ -7136,19 +7137,61 @@ aside#side-menu {
   aside#side-menu .brand {
     height: 4.5rem; }
 
-#main-menu a {
-  color: #ffffff; }
+#main-menu {
+  font-weight: 300;
+  padding: 0; }
+  #main-menu > ul {
+    margin: 1rem 0rem; }
+  #main-menu a {
+    color: #ffffff;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; }
+    #main-menu a > i.fa,
+    #main-menu a > svg {
+      margin: 0 2rem 0 0;
+      width: 1.3rem;
+      height: 1.3rem;
+      text-align: center; }
+  #main-menu li.item {
+    cursor: pointer; }
+    #main-menu li.item:hover, #main-menu li.item.opened {
+      background: rgba(75, 101, 133, 0.6); }
+      #main-menu li.item:hover a span.arrow, #main-menu li.item.opened a span.arrow {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg); }
+    #main-menu li.item a {
+      padding: 0 1rem; }
+      #main-menu li.item a span.arrow {
+        border: solid #eaedef;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        position: absolute;
+        right: 1rem; }
+    #main-menu li.item.opened .submenu {
+      display: block; }
+  #main-menu .submenu {
+    display: none;
+    background: rgba(75, 101, 133, 0.6); }
+    #main-menu .submenu ul > li:hover {
+      background: rgba(75, 101, 133, 0.7); }
 
 html {
   font-size: 16px;
   height: 100%;
   overflow: auto; }
-  html body,
-  html .app {
-    height: 100%;
-    display: flex; }
-  html .content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 15rem; }
+  html body {
+    font-family: "Lato", sans-serif; }
+    html body .app {
+      height: 100%;
+      display: flex; }
+    html body .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 15rem; }

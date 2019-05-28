@@ -7,9 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
   <link rel="stylesheet" href="public/css/style.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
-    integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
-    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+  <script defer src="js/fontawesome-5.8.2.js"></script>
 </head>
 
 <body>
@@ -22,31 +21,44 @@
       </div>
       <nav id="main-menu">
         <ul>
-          <li class="item">
-            <a href="">User</a>
+          <li class="item opened">
+            <a href="">
+              <i class="fas fa-user"></i>
+              <span>User</span>
+              <span class="arrow"></span>
+
+            </a>
             <div class="submenu">
-              <a href="">New</a>
-              <a href="">List</a>
-              <a href="">Manager</a>
+              <ul>
+                <li><a href=""><i class="fas fa-user-plus"></i>New</a></li>
+                <li><a href=""><i class="fas fa-users"></i>List</a></li>
+                <li><a href=""><i class="fas fa-users-cog"></i>Manager</a></li>
+              </ul>
             </div>
           </li>
           <li class="item">
-            <a href="">Member</a>
+            <a href=""><i class="fas fa-list-ul"></i><span>Member</span><span class="arrow"></span></a>
             <div class="submenu">
-              <a href="">New</a>
-              <a href="">List</a>
-              <a href="">Manager</a>
+              <ul>
+                <li><a href=""><i class="fas fa-user-plus"></i>New</a></li>
+                <li><a href=""><i class="fas fa-users"></i>List</a></li>
+                <li><a href=""><i class="fas fa-users-cog"></i>Manager</a></li>
+              </ul>
             </div>
           </li>
           <li class="item">
-            <a href="">Calendar</a>
+            <a href=""><i class="fas fa-calendar-alt"></i><span>Calendar</span><span class="arrow"></span></a>
             <div class="submenu">
-              <a href="">New</a>
-              <a href="">List</a>
-              <a href="">Manager</a>
+              <ul>
+                <li><a href=""><i class="fas fa-user-plus"></i>New</a></li>
+                <li><a href=""><i class="fas fa-users"></i>List</a></li>
+                <li><a href=""><i class="fas fa-users-cog"></i>Manager</a></li>
+              </ul>
             </div>
           </li>
-          <li class="item"><a href="">Configuration</a></li>
+          <li class="item">
+            <a href=""><i class="fas fa-cube"></i><span>Configuration</span></a>
+          </li>
         </ul>
       </nav>
     </aside>

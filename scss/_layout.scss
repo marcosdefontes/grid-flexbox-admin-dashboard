@@ -8,15 +8,17 @@ html {
   font-size: $fontSize;
   height: 100%;
   overflow: auto;
-  body,
-  .app {
-    height: 100%;
-    display: flex;
-  }
-  .content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: $sideMenuSize;
+  body {
+    font-family: $fontFamily;
+    .app {
+      height: 100%;
+      display: flex;
+    }
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: $sideMenuSize;
+    }
   }
 }
