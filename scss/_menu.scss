@@ -1,6 +1,5 @@
 $arrowColor: #00a8ff;
 $activatedColor: #fbc531;
-$openedMenuItemBg: #192a56;
 $openedSubmenuItemBg: #487eb0;
 $activatedItemBg: #40739e;
 
@@ -68,7 +67,6 @@ aside#side-menu {
     }
     // Opened
     &.opened {
-      background: $openedMenuItemBg;
       a {
         span.arrow {
           transform: rotate(45deg); // down

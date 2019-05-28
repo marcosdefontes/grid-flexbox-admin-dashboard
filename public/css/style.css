@@ -7238,12 +7238,10 @@ aside#side-menu {
       transform: rotate(-45deg); }
     #main-menu li.item:not(.opened) a:hover span.arrow {
       animation: slide-right 0.5s ease-in-out infinite; }
-    #main-menu li.item.opened {
-      background: #192a56; }
-      #main-menu li.item.opened a span.arrow {
-        transform: rotate(45deg); }
-      #main-menu li.item.opened a:hover span.arrow {
-        animation: slide-up 0.5s ease-in-out infinite; }
+    #main-menu li.item.opened a span.arrow {
+      transform: rotate(45deg); }
+    #main-menu li.item.opened a:hover span.arrow {
+      animation: slide-up 0.5s ease-in-out infinite; }
     #main-menu li.item.opened .submenu {
       display: block; }
     #main-menu li.item .submenu {
