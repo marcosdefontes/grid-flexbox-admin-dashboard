@@ -7166,19 +7166,19 @@ main {
   flex: 1;
   padding: 2rem 1rem; }
 
-footer {
+footer.footer {
+  background: linear-gradient(180deg, #f5f6fa 0%, #c23616 5%);
   font-weight: 300;
-  border-top: 3px dashed #f5f6fa;
   display: flex;
   flex-direction: row;
   align-items: center; }
-  footer div {
+  footer.footer div {
     flex-grow: 1; }
-  footer .footer-links {
+  footer.footer .footer-links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    footer .footer-links div {
+    footer.footer .footer-links div {
       display: flex;
       flex-grow: 1;
       flex-direction: row;
@@ -7186,15 +7186,15 @@ footer {
       align-items: center;
       min-height: 4rem;
       color: #f3a897; }
-      footer .footer-links div svg,
-      footer .footer-links div .svg-inline--fa,
-      footer .footer-links div i.fa {
+      footer.footer .footer-links div svg,
+      footer.footer .footer-links div .svg-inline--fa,
+      footer.footer .footer-links div i.fa {
         width: 2rem;
         margin: 1rem; }
-      footer .footer-links div a {
+      footer.footer .footer-links div a {
         color: #f3a897;
         font-weight: bold; }
-  footer .footer-copyright {
+  footer.footer .footer-copyright {
     text-align: right;
     color: #ee8269;
     font-size: 0.85rem; }

@@ -1,6 +1,7 @@
-footer {
+footer.footer {
+  background: $footer-background-color-bg;
   font-weight: 300;
-  border-top: 3px dashed $mainBgColor;
+  // border-top: 3px dashed $mainBgColor;
   display: flex;
   flex-direction: row;
   align-items: center;
