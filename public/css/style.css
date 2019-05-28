@@ -7108,8 +7108,14 @@ header {
   #dropdown-notifications.has-notification i.fa,
   #dropdown-notifications.has-notification i.fas,
   #dropdown-notifications.has-notification svg {
-    animation: ring 4s 0.7s ease-in-out infinite;
+    animation: ring 4s 0.7s ease-in-out infinite, alert 4s 0.7s ease-in-out infinite;
     transform-origin: 50% 4px; }
+
+@keyframes alert {
+  0% {
+    color: #363636; }
+  20% {
+    color: #eb3b5a; } }
 
 @keyframes ring {
   0% {
