@@ -7000,14 +7000,14 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #b12c37;
+  background-color: #c23616;
   padding: 2rem 1rem; }
 
 header {
   height: 4.5rem;
   min-height: 4.5rem;
-  background: #eaedef;
-  background: linear-gradient(90deg, #eaedef 73%, #dce0e4 100%);
+  background: #dcdde1;
+  background: linear-gradient(90deg, #dcdde1 73%, #f5f6fa 100%);
   border-bottom: 1px solid #d1d8e0;
   padding: 0.2rem 1rem;
   align-items: stretch;
@@ -7044,7 +7044,7 @@ header {
       header .navbar-user .dropdown .dropdown-menu {
         padding: 0; }
         header .navbar-user .dropdown .dropdown-menu .dropdown-content {
-          background: ligthen(#dce0e4, 10%);
+          background: ligthen(#f5f6fa, 10%);
           border-radius: 0px 0px 6px 6px;
           box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1); }
           header .navbar-user .dropdown .dropdown-menu .dropdown-content .dropdown-item i.fa,
@@ -7094,6 +7094,7 @@ header {
   #dropdown-notifications span.bagde {
     border-radius: 50%;
     font-size: 0.8rem;
+    font-weight: bold;
     background: #eb3b5a;
     color: #d1d8e0;
     position: absolute;
@@ -7103,112 +7104,8 @@ header {
   #dropdown-notifications.has-notification i.fa,
   #dropdown-notifications.has-notification i.fas,
   #dropdown-notifications.has-notification svg {
-    -webkit-animation: ring 4s 0.7s ease-in-out infinite;
-    -webkit-transform-origin: 50% 4px;
-    -moz-animation: ring 4s 0.7s ease-in-out infinite;
-    -moz-transform-origin: 50% 4px;
     animation: ring 4s 0.7s ease-in-out infinite;
     transform-origin: 50% 4px; }
-
-@-webkit-keyframes ring {
-  0% {
-    -webkit-transform: rotateZ(0); }
-  1% {
-    -webkit-transform: rotateZ(30deg); }
-  3% {
-    -webkit-transform: rotateZ(-28deg); }
-  5% {
-    -webkit-transform: rotateZ(34deg); }
-  7% {
-    -webkit-transform: rotateZ(-32deg); }
-  9% {
-    -webkit-transform: rotateZ(30deg); }
-  11% {
-    -webkit-transform: rotateZ(-28deg); }
-  13% {
-    -webkit-transform: rotateZ(26deg); }
-  15% {
-    -webkit-transform: rotateZ(-24deg); }
-  17% {
-    -webkit-transform: rotateZ(22deg); }
-  19% {
-    -webkit-transform: rotateZ(-20deg); }
-  21% {
-    -webkit-transform: rotateZ(18deg); }
-  23% {
-    -webkit-transform: rotateZ(-16deg); }
-  25% {
-    -webkit-transform: rotateZ(14deg); }
-  27% {
-    -webkit-transform: rotateZ(-12deg); }
-  29% {
-    -webkit-transform: rotateZ(10deg); }
-  31% {
-    -webkit-transform: rotateZ(-8deg); }
-  33% {
-    -webkit-transform: rotateZ(6deg); }
-  35% {
-    -webkit-transform: rotateZ(-4deg); }
-  37% {
-    -webkit-transform: rotateZ(2deg); }
-  39% {
-    -webkit-transform: rotateZ(-1deg); }
-  41% {
-    -webkit-transform: rotateZ(1deg); }
-  43% {
-    -webkit-transform: rotateZ(0); }
-  100% {
-    -webkit-transform: rotateZ(0); } }
-
-@-moz-keyframes ring {
-  0% {
-    -moz-transform: rotate(0); }
-  1% {
-    -moz-transform: rotate(30deg); }
-  3% {
-    -moz-transform: rotate(-28deg); }
-  5% {
-    -moz-transform: rotate(34deg); }
-  7% {
-    -moz-transform: rotate(-32deg); }
-  9% {
-    -moz-transform: rotate(30deg); }
-  11% {
-    -moz-transform: rotate(-28deg); }
-  13% {
-    -moz-transform: rotate(26deg); }
-  15% {
-    -moz-transform: rotate(-24deg); }
-  17% {
-    -moz-transform: rotate(22deg); }
-  19% {
-    -moz-transform: rotate(-20deg); }
-  21% {
-    -moz-transform: rotate(18deg); }
-  23% {
-    -moz-transform: rotate(-16deg); }
-  25% {
-    -moz-transform: rotate(14deg); }
-  27% {
-    -moz-transform: rotate(-12deg); }
-  29% {
-    -moz-transform: rotate(10deg); }
-  31% {
-    -moz-transform: rotate(-8deg); }
-  33% {
-    -moz-transform: rotate(6deg); }
-  35% {
-    -moz-transform: rotate(-4deg); }
-  37% {
-    -moz-transform: rotate(2deg); }
-  39% {
-    -moz-transform: rotate(-1deg); }
-  41% {
-    -moz-transform: rotate(1deg); }
-  43% {
-    -moz-transform: rotate(0); }
-  100% {
-    -moz-transform: rotate(0); } }
 
 @keyframes ring {
   0% {
@@ -7261,13 +7158,13 @@ header {
     transform: rotate(0); } }
 
 main {
-  background-color: #dce0e4;
+  background-color: #f5f6fa;
   flex: 1;
   padding: 2rem 1rem; }
 
 footer {
   font-weight: 300;
-  border-top: 3px dashed #dce0e4;
+  border-top: 3px dashed #f5f6fa;
   display: flex;
   flex-direction: row;
   align-items: center; }
@@ -7284,23 +7181,23 @@ footer {
       justify-content: flex-start;
       align-items: center;
       min-height: 4rem;
-      color: #e9a7ac; }
+      color: #f3a897; }
       footer .footer-links div svg,
       footer .footer-links div .svg-inline--fa,
       footer .footer-links div i.fa {
         width: 2rem;
         margin: 1rem; }
       footer .footer-links div a {
-        color: #e9a7ac;
+        color: #f3a897;
         font-weight: bold; }
   footer .footer-copyright {
     text-align: right;
-    color: #df7e86;
+    color: #ee8269;
     font-size: 0.85rem; }
 
 aside#side-menu {
   background: #4b7bec;
-  background: linear-gradient(135deg, #1e4f85 0%, #7cade2 100%);
+  background: linear-gradient(135deg, #40739e 0%, #0097e6 100%);
   width: 15rem;
   position: fixed;
   min-height: 100%;
@@ -7320,7 +7217,7 @@ aside#side-menu {
     align-items: center; }
     #main-menu a > i.fa,
     #main-menu a > svg {
-      margin: 0 2rem 0 0;
+      margin: 0 1rem 0 0;
       width: 1.3rem;
       height: 1.3rem;
       text-align: center; }
@@ -7329,7 +7226,7 @@ aside#side-menu {
     #main-menu li.item a {
       padding: 0 1rem; }
       #main-menu li.item a span.arrow {
-        border: solid #8ab5e5;
+        border: solid #00a8ff;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
@@ -7342,7 +7239,7 @@ aside#side-menu {
     #main-menu li.item:not(.opened) a:hover span.arrow {
       animation: slide-right 0.5s ease-in-out infinite; }
     #main-menu li.item.opened {
-      background: rgba(75, 101, 133, 0.6); }
+      background: #192a56; }
       #main-menu li.item.opened a span.arrow {
         transform: rotate(45deg); }
       #main-menu li.item.opened a:hover span.arrow {
@@ -7351,15 +7248,16 @@ aside#side-menu {
       display: block; }
     #main-menu li.item .submenu {
       display: none;
-      background: rgba(75, 101, 133, 0.6); }
+      background: #487eb0; }
+      #main-menu li.item .submenu li a {
+        padding-left: 2.25rem; }
   #main-menu li.active {
-    background: rgba(75, 101, 133, 0.6);
+    background: #40739e;
+    border-left: 0.4rem solid #b7a575;
     font-weight: 400; }
-    #main-menu li.active a {
-      color: #f7b731; }
     #main-menu li.active i.fa:first-child,
     #main-menu li.active svg:first-child {
-      color: #f7b731; }
+      color: #fbc531; }
 
 @keyframes slide-right {
   0%,

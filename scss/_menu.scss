@@ -1,5 +1,8 @@
-$arrowColor: lighten(#1e4f85, 40%);
-$activatedColor: #f7b731;
+$arrowColor: #00a8ff;
+$activatedColor: #fbc531;
+$openedMenuItemBg: #192a56;
+$openedSubmenuItemBg: #487eb0;
+$activatedItemBg: #40739e;
 
 aside#side-menu {
   background: $sideMenuBgColor;
@@ -25,7 +28,7 @@ aside#side-menu {
     align-items: center;
     & > i.fa,
     & > svg {
-      margin: 0 2rem 0 0;
+      margin: 0 1rem 0 0;
       width: 1.3rem;
       height: 1.3rem;
       text-align: center;
@@ -65,7 +68,7 @@ aside#side-menu {
     }
     // Opened
     &.opened {
-      background: rgba(75, 101, 133, 0.6);
+      background: $openedMenuItemBg;
       a {
         span.arrow {
           transform: rotate(45deg); // down
@@ -86,16 +89,17 @@ aside#side-menu {
     // All States submenus
     .submenu {
       display: none;
-      background: rgba(75, 101, 133, 0.6);
+      background: $openedSubmenuItemBg;
+      li a {
+        padding-left: 2.25rem;
+      }
     }
   }
 
   li.active {
-    background: rgba(75, 101, 133, 0.6);
+    background: $activatedItemBg;
+    border-left: 0.4rem solid desaturate($activatedColor, 65%);
     font-weight: 400;
-    a {
-      color: $activatedColor;
-    }
     i.fa:first-child,
     svg:first-child {
       color: $activatedColor;

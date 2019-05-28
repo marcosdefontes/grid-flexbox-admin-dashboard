@@ -3,11 +3,11 @@ $fontFamily: "Lato", sans-serif;
 $family-sans-serif: $fontFamily;
 
 // Main
-$mainBgColor: #dce0e4;
+$mainBgColor: #f5f6fa;
 
 // Header
 $headerSize: 4.5rem;
-$headerBgColor: lighten($mainBgColor, 5%);
+$headerBgColor: #dcdde1;
 $headerBgColorGradient: linear-gradient(
   90deg,
   $headerBgColor 73%,
@@ -16,10 +16,10 @@ $headerBgColorGradient: linear-gradient(
 
 // Footer
 $footerMinSize: 10rem;
-$footer-background-color: #b12c37;
+$footer-background-color: #c23616;
 $footer-padding: 2rem 1rem;
 
 // SideMenu
 $sideMenuSize: 15rem;
 $sideMenuBgColor: #4b7bec;
-$sideMenuBgColorGradient: linear-gradient(135deg, #1e4f85 0%, #7cade2 100%);
+$sideMenuBgColorGradient: linear-gradient(135deg, #40739e 0%, #0097e6 100%);
