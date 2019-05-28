@@ -7131,7 +7131,8 @@ aside#side-menu {
   background: #4b7bec;
   background: linear-gradient(135deg, #1e4f85 0%, #7cade2 100%);
   width: 15rem;
-  height: 100%;
+  position: fixed;
+  min-height: 100%;
   float: left; }
 
 html {
@@ -7140,7 +7141,8 @@ html {
   overflow: auto; }
   html body,
   html .app {
-    height: 100%; }
+    height: 100%;
+    display: flex; }
   html .content {
     height: 100%;
     display: flex;

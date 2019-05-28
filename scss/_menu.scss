@@ -2,6 +2,7 @@ aside#side-menu {
   background: $sideMenuBgColor;
   background: $sideMenuBgColorGradient;
   width: $sideMenuSize;
-  height: 100%;
+  position: fixed;
+  min-height: 100%;
   float: left;
 }
