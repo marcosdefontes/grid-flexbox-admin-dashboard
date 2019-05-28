@@ -9,4 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
          dropdown.classList.remove('is-active')
       }
    });
+
+   menuItems = document.getElementById('main-menu').getElementsByClassName('item');
+   [].forEach.call(menuItems, function (el) {
+      el.addEventListener('click', function () {
+         el.classList.toggle('opened');
+      })
+   });
+
 });

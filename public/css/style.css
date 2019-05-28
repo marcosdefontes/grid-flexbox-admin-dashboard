@@ -7157,9 +7157,11 @@ aside#side-menu {
       text-align: center; }
   #main-menu li.item {
     cursor: pointer; }
-    #main-menu li.item:hover, #main-menu li.item.opened {
+    #main-menu li.item:hover {
       background: rgba(75, 101, 133, 0.6); }
-      #main-menu li.item:hover a span.arrow, #main-menu li.item.opened a span.arrow {
+    #main-menu li.item.opened {
+      background: rgba(75, 101, 133, 0.6); }
+      #main-menu li.item.opened a span.arrow {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg); }
     #main-menu li.item a {

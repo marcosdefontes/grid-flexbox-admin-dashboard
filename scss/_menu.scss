@@ -33,7 +33,10 @@ aside#side-menu {
   }
   li.item {
     cursor: pointer;
-    &:hover,
+
+    &:hover {
+      background: rgba(75, 101, 133, 0.6);
+    }
     &.opened {
       background: rgba(75, 101, 133, 0.6);
       a span.arrow {
