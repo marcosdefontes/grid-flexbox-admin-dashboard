@@ -101,7 +101,7 @@ aside#side-menu {
     font-weight: 400;
     i.fa:first-child,
     svg:first-child {
-      color: $activatedColor;
+      color: desaturate($activatedColor, 25%);
     }
   }
 }

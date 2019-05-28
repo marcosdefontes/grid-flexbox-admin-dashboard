@@ -2,8 +2,7 @@ header {
   height: $headerSize;
   min-height: $headerSize;
   background: $headerBgColor;
-  background: $headerBgColorGradient;
-  border-bottom: 1px solid #d1d8e0;
+  // background: $headerBgColorGradient;
   padding: 0.2rem 1rem;
   align-items: stretch;
   display: flex;

@@ -7007,8 +7007,6 @@ header {
   height: 4.5rem;
   min-height: 4.5rem;
   background: #dcdde1;
-  background: linear-gradient(90deg, #dcdde1 73%, #f5f6fa 100%);
-  border-bottom: 1px solid #d1d8e0;
   padding: 0.2rem 1rem;
   align-items: stretch;
   display: flex; }
@@ -7268,7 +7266,7 @@ aside#side-menu {
     font-weight: 400; }
     #main-menu li.active i.fa:first-child,
     #main-menu li.active svg:first-child {
-      color: #fbc531; }
+      color: #e1b94b; }
 
 @keyframes slide-right {
   0%,
