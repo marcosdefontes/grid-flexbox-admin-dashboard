@@ -111,6 +111,13 @@ header {
 
 #dropdown-notifications {
   margin-right: 2rem;
+  button {
+    i.fa,
+    i.fas,
+    svg {
+      font-size: 1.5rem;
+    }
+  }
   span.bagde {
     border-radius: 50%;
     font-size: 0.8rem;

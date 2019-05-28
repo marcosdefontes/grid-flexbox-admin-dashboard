@@ -7091,6 +7091,10 @@ header {
 
 #dropdown-notifications {
   margin-right: 2rem; }
+  #dropdown-notifications button i.fa,
+  #dropdown-notifications button i.fas,
+  #dropdown-notifications button svg {
+    font-size: 1.5rem; }
   #dropdown-notifications span.bagde {
     border-radius: 50%;
     font-size: 0.8rem;
