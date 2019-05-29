@@ -32,6 +32,10 @@ header {
     }
   }
 
+  .logo-mobile {
+    grid-area: logo-mobile;
+  }
+
   .user-actions {
     grid-area: user-actions;
     justify-self: end;
@@ -75,6 +79,7 @@ header {
 }
 
 .menu-toggler {
+  grid-area: menu-toggler;
   width: 3.125rem;
   height: 2.75rem;
   display: flex;
@@ -141,6 +146,22 @@ header {
       animation: ring 4s 0.7s ease-in-out infinite,
         alert 4s 0.7s ease-in-out infinite;
       transform-origin: 50% 4px;
+    }
+  }
+}
+// Header layout at small screens
+@media only screen and (max-width: $tablet) {
+  header {
+    grid-template-areas:
+      "logo-mobile title user-actions menu-toggler"
+      "breadcrumb breadcrumb breadcrumb breadcrumb";
+    grid-template-columns: 2.5rem auto 2.5rem 2.5rem;
+    grid-column-gap: 0.7rem;
+    align-items: center;
+    height: auto;
+    h2.titles {
+      font-size: 1.5rem;
+      font-weight: bold;
     }
   }
 }
