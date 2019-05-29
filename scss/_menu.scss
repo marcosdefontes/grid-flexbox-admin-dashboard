@@ -3,6 +3,12 @@ $activatedColor: #fbc531;
 $openedSubmenuItemBg: #487eb0;
 $activatedItemBg: #40739e;
 
+@media only screen and (max-width: $tablet) {
+  aside#side-menu {
+    display: none;
+  }
+}
+
 aside#side-menu {
   background: $sideMenuBgColor;
   background: $sideMenuBgColorGradient;

@@ -7009,7 +7009,8 @@ header {
   background: #dcdde1;
   padding: 0.2rem 1rem;
   align-items: stretch;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   header h2.titles {
     margin: 0.2rem 0 0;
     font-weight: 300;
@@ -7205,6 +7206,10 @@ footer.footer {
     color: #ee8269;
     font-size: 0.85rem; }
 
+@media only screen and (max-width: 769px) {
+  aside#side-menu {
+    display: none; } }
+
 aside#side-menu {
   background: #4b7bec;
   background: linear-gradient(135deg, #40739e 0%, #0097e6 100%);
@@ -7296,3 +7301,7 @@ html {
       display: flex;
       flex-direction: column;
       margin-left: 15rem; }
+
+@media only screen and (max-width: 767px) {
+  html body .content {
+    margin-left: 0; } }
