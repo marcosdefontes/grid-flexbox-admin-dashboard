@@ -7000,7 +7000,7 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #c23616;
+  background-color: #dcdde1;
   padding: 2rem 1rem; }
 
 header {
@@ -7167,7 +7167,8 @@ main {
     padding: 7.25rem 0.8rem 2rem 0.8rem; } }
 
 footer.footer {
-  background: linear-gradient(180deg, #f5f6fa 0%, #c23616 5%);
+  background: #dcdde1;
+  box-shadow: 0 -0.8rem 0 0 rgba(194, 54, 22, 0.23);
   font-weight: 300;
   display: flex;
   flex-direction: row;
@@ -7185,19 +7186,26 @@ footer.footer {
       justify-content: flex-start;
       align-items: center;
       min-height: 4rem;
-      color: #f3a897; }
+      color: #7c808f; }
       footer.footer .footer-links div svg,
       footer.footer .footer-links div .svg-inline--fa,
       footer.footer .footer-links div i.fa {
         width: 2rem;
         margin: 1rem; }
       footer.footer .footer-links div a {
-        color: #f3a897;
+        color: #7c808f;
         font-weight: bold; }
   footer.footer .footer-copyright {
     text-align: right;
-    color: #ee8269;
+    color: #c85438;
     font-size: 0.85rem; }
+
+@media only screen and (max-width: 769px) {
+  footer.footer {
+    padding: 1rem 1rem;
+    flex-direction: column; }
+    footer.footer .footer-links div {
+      margin: 0 2rem; } }
 
 @media only screen and (max-width: 769px) {
   aside#side-menu {

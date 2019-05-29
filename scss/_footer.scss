@@ -1,7 +1,7 @@
 footer.footer {
-  background: $footer-background-color-bg;
+  background: $footer-background-color;
+  box-shadow: 0 -0.8rem 0 0 rgba(194, 54, 22, 0.23);
   font-weight: 300;
-  // border-top: 3px dashed $mainBgColor;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,7 +19,7 @@ footer.footer {
       justify-content: flex-start;
       align-items: center;
       min-height: 4rem;
-      color: lighten($footer-background-color, 35%);
+      color: darken($footer-background-color, 35%);
       svg,
       .svg-inline--fa,
       i.fa {
@@ -27,7 +27,7 @@ footer.footer {
         margin: 1rem;
       }
       a {
-        color: lighten($footer-background-color, 35%);
+        color: darken($footer-background-color, 35%);
         font-weight: bold;
       }
     }
@@ -35,7 +35,18 @@ footer.footer {
 
   .footer-copyright {
     text-align: right;
-    color: lighten($footer-background-color, 25%);
+    color: desaturate(#e84118, 25%);
     font-size: 0.85rem;
+  }
+}
+
+// Footer layout on mobile
+@media only screen and (max-width: $tablet) {
+  footer.footer {
+    padding: 1rem 1rem;
+    flex-direction: column;
+    .footer-links div {
+      margin: 0 2rem;
+    }
   }
 }
