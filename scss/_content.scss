@@ -3,3 +3,10 @@ main {
   flex: 1;
   padding: 2rem 1rem;
 }
+
+// Main layout at small screens
+@media only screen and (max-width: $tablet) {
+  main {
+    padding: 7.25rem 0.8rem 2rem 0.8rem;
+  }
+}

@@ -7092,7 +7092,9 @@ header {
     grid-template-columns: 3.5rem auto 2.5rem;
     grid-column-gap: 0.7rem;
     align-items: center;
-    height: auto;
+    height: 6.25rem;
+    width: 100%;
+    position: fixed;
     box-shadow: 0 0.2rem 0.2rem 0 #353b48;
     z-index: 10; }
     header h2.titles {
@@ -7159,6 +7161,10 @@ main {
   background-color: #f5f6fa;
   flex: 1;
   padding: 2rem 1rem; }
+
+@media only screen and (max-width: 769px) {
+  main {
+    padding: 7.25rem 0.8rem 2rem 0.8rem; } }
 
 footer.footer {
   background: linear-gradient(180deg, #f5f6fa 0%, #c23616 5%);
@@ -7289,6 +7295,6 @@ html {
       flex-direction: column;
       margin-left: 15rem; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
   html body .content {
     margin-left: 0; } }
