@@ -17,4 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
       })
    });
 
+   menuTogglers = document.getElementsByClassName('menu-toggler');
+   [].forEach.call(menuTogglers, function (el) {
+      el.addEventListener('click', function () {
+         document.getElementById('side-menu').classList.toggle('opened');
+      })
+
+   })
+
 });

@@ -7,17 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
   <link rel="stylesheet" href="public/css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet" display="optional">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet" display="optional"> -->
   <script defer src="js/fontawesome-5.8.2.js"></script>
 </head>
 
 <body>
   <div class="app">
     <aside id="side-menu">
-      <div class="brand">
-        <a href="#">
-          <img src="images/logo.svg" alt="Logo" />
-        </a>
+      <div class="top-menu">
+        <div class="brand">
+          <a href="#">
+            <img src="images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="menu-toggler close-menu">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+          <label class="close">fechar</label>
+        </div>
       </div>
       <nav id="main-menu">
         <ul>
@@ -63,7 +70,7 @@
     </aside>
     <div class="content">
       <header>
-        <div class="menu-toggler is-hidden-desktop">
+        <div class="logo-menu-toggler menu-toggler">
           <img src="images/logo-mobile.svg" alt="Logo Mobile">
         </div>
         <h2 class="titles is-2">Title page</h2>
@@ -90,7 +97,7 @@
               </div>
             </div>
           </div>
-          <div class="dropdown is-right is-hoverable is-hidden-touch" id="dropdown-usermenu">
+          <div class="dropdown is-right is-hoverable" id="dropdown-usermenu">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
                 <div class="user-avatar">

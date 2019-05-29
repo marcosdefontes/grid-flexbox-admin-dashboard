@@ -78,9 +78,10 @@ header {
   }
 }
 
-.menu-toggler {
-  grid-area: menu-toggler;
+.logo-menu-toggler {
+  grid-area: logo-menu-toggler;
   cursor: pointer;
+  display: none;
 }
 
 #dropdown-notifications {
@@ -113,12 +114,13 @@ header {
     }
   }
 }
+
 // Header layout at small screens
 @media only screen and (max-width: $tablet) {
   header {
     grid-template-areas:
-      "menu-toggler title user-actions "
-      " menu-toggler breadcrumb breadcrumb ";
+      "logo-menu-toggler title user-actions "
+      "logo-menu-toggler breadcrumb breadcrumb ";
     grid-template-columns: 3.5rem auto 2.5rem;
     grid-column-gap: 0.7rem;
     align-items: center;
@@ -130,6 +132,14 @@ header {
     h2.titles {
       font-size: 1.2rem;
       font-weight: bold;
+    }
+
+    #dropdown-usermenu {
+      display: none;
+    }
+
+    .logo-menu-toggler {
+      display: block;
     }
   }
 }
