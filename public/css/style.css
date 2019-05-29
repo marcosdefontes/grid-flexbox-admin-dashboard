@@ -7213,7 +7213,7 @@ footer.footer {
       margin: 0 2rem; } }
 
 aside#side-menu {
-  transition: 1s ease-in-out;
+  transition: 0.7s ease-in-out;
   background: #4b7bec;
   background: linear-gradient(135deg, #40739e 0%, #0097e6 100%);
   width: 15rem;
@@ -7324,6 +7324,7 @@ aside#side-menu {
 
 @media only screen and (max-width: 769px) {
   aside#side-menu {
+    transition: 0.3s ease-in-out;
     transform: translateX(-15rem); }
     aside#side-menu.opened {
       transform: translateX(0);

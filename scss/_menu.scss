@@ -4,7 +4,7 @@ $openedSubmenuItemBg: #487eb0;
 $activatedItemBg: #40739e;
 
 aside#side-menu {
-  transition: 1s ease-in-out;
+  transition: 0.7s ease-in-out;
   background: $sideMenuBgColor;
   background: $sideMenuBgColorGradient;
   width: $sideMenuSize;
@@ -174,7 +174,7 @@ aside#side-menu {
 
 @media only screen and (max-width: $tablet) {
   aside#side-menu {
-    //  display: none;
+    transition: 0.3s ease-in-out;
     transform: translateX(-$sideMenuSize);
     &.opened {
       transform: translateX(0);
