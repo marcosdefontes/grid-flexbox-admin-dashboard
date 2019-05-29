@@ -2,72 +2,74 @@ header {
   height: $headerSize;
   min-height: $headerSize;
   background: $headerBgColor;
-  // background: $headerBgColorGradient;
   padding: 0.2rem 1rem;
-  align-items: stretch;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:
+    "title user-actions"
+    "breadcrumb user-actions";
+  grid-template-columns: auto auto;
   h2.titles {
-    margin: 0.2rem 0 0;
+    grid-area: title;
+    &:not(:first-child) {
+      margin: 0.2rem 0 0;
+    }
     font-weight: 300;
     color: #273c75;
+    margin: 0;
   }
 
-  .title-wrapper {
-    flex-grow: 1;
-    position: relative;
-    .breadcrumb {
-      bottom: 0;
-      position: absolute;
-      ul,
-      li + li {
-        margin: 0;
-      }
-      li {
-        font-size: 0.8rem;
-      }
+  .breadcrumb {
+    grid-area: breadcrumb;
+    &:not(:last-child) {
+      margin: 0;
+    }
+    ul,
+    li + li {
+      margin: 0;
+    }
+    li {
+      font-size: 0.8rem;
     }
   }
 
-  .navbar-user {
+  .user-actions {
+    grid-area: user-actions;
+    justify-self: end;
+    display: flex;
+  }
+
+  .dropdown {
     align-items: center;
     display: flex;
-    flex-grow: 3;
-    flex-shrink: 0;
-    justify-content: flex-end;
-    .dropdown {
-      align-items: center;
+    .dropdown-trigger {
       display: flex;
-      .dropdown-trigger {
-        display: flex;
-        align-items: center;
-        button.button {
-          height: $headerSize;
-          background: transparent;
-          border: none;
-        }
+      align-items: center;
+      button.button {
+        height: $headerSize;
+        background: transparent;
+        border: none;
       }
-      .dropdown-menu {
-        padding: 0;
-        .dropdown-content {
-          background: ligthen($mainBgColor, 10%);
-          border-radius: 0px 0px 6px 6px;
-          box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
-          .dropdown-item i.fa,
-          svg {
-            width: 1.05rem;
-            margin-right: 0.5rem;
-          }
+    }
+    .dropdown-menu {
+      padding: 0;
+      .dropdown-content {
+        background: ligthen($mainBgColor, 10%);
+        border-radius: 0px 0px 6px 6px;
+        box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+        .dropdown-item i.fa,
+        svg {
+          width: 1.05rem;
+          margin-right: 0.5rem;
         }
       }
     }
-    .user-avatar {
-      margin: 0 0.5625rem 0 0;
-      img {
-        max-height: 2.625rem;
-        height: 2.625rem;
-        border-radius: 290486px;
-      }
+  }
+  .user-avatar {
+    margin: 0 0.5625rem 0 0;
+    img {
+      max-height: 2.625rem;
+      height: 2.625rem;
+      border-radius: 290486px;
     }
   }
 }
@@ -112,6 +114,7 @@ header {
 }
 
 #dropdown-notifications {
+  grid-area: notifications;
   margin-right: 2rem;
   button {
     i.fa,
@@ -141,6 +144,11 @@ header {
       transform-origin: 50% 4px;
     }
   }
+}
+
+#dropdown-usermenu {
+  grid-area: user-menu;
+  justify-self: end;
 }
 
 @keyframes alert {
