@@ -80,18 +80,10 @@ header {
 
 .menu-toggler {
   grid-area: menu-toggler;
-  width: 3.125rem;
-  height: 2.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 1rem;
   cursor: pointer;
-  z-index: 1500;
 }
 
 #dropdown-notifications {
-  margin-right: 2rem;
   button {
     i.fa,
     i.fas,
@@ -125,16 +117,16 @@ header {
 @media only screen and (max-width: $tablet) {
   header {
     grid-template-areas:
-      "title user-actions menu-toggler"
-      "breadcrumb breadcrumb breadcrumb";
-    grid-template-columns: auto 2.5rem 2.5rem;
+      "menu-toggler title user-actions "
+      " menu-toggler breadcrumb breadcrumb ";
+    grid-template-columns: 3.5rem auto 2.5rem;
     grid-column-gap: 0.7rem;
     align-items: center;
     height: auto;
     box-shadow: 0 0.2rem 0.2rem 0 #353b48;
     z-index: 10;
     h2.titles {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
     }
   }

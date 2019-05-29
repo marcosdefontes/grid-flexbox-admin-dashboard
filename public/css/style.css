@@ -7062,48 +7062,41 @@ header {
 
 .menu-toggler {
   grid-area: menu-toggler;
-  width: 3.125rem;
-  height: 2.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 1rem;
-  cursor: pointer;
-  z-index: 1500; }
+  cursor: pointer; }
 
-#dropdown-notifications {
-  margin-right: 2rem; }
-  #dropdown-notifications button i.fa,
-  #dropdown-notifications button i.fas,
-  #dropdown-notifications button svg {
-    font-size: 1.5rem; }
-  #dropdown-notifications span.bagde {
-    border-radius: 50%;
-    font-size: 0.8rem;
-    font-weight: bold;
-    background: #eb3b5a;
-    color: #d1d8e0;
-    position: absolute;
-    top: 0.8rem;
-    right: -0.3rem;
-    padding: 0.1rem 0.3rem; }
-  #dropdown-notifications.has-notification i.fa,
-  #dropdown-notifications.has-notification i.fas,
-  #dropdown-notifications.has-notification svg {
-    animation: ring 4s 0.7s ease-in-out infinite, alert 4s 0.7s ease-in-out infinite;
-    transform-origin: 50% 4px; }
+#dropdown-notifications button i.fa,
+#dropdown-notifications button i.fas,
+#dropdown-notifications button svg {
+  font-size: 1.5rem; }
+
+#dropdown-notifications span.bagde {
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: #eb3b5a;
+  color: #d1d8e0;
+  position: absolute;
+  top: 0.8rem;
+  right: -0.3rem;
+  padding: 0.1rem 0.3rem; }
+
+#dropdown-notifications.has-notification i.fa,
+#dropdown-notifications.has-notification i.fas,
+#dropdown-notifications.has-notification svg {
+  animation: ring 4s 0.7s ease-in-out infinite, alert 4s 0.7s ease-in-out infinite;
+  transform-origin: 50% 4px; }
 
 @media only screen and (max-width: 769px) {
   header {
-    grid-template-areas: "title user-actions menu-toggler" "breadcrumb breadcrumb breadcrumb";
-    grid-template-columns: auto 2.5rem 2.5rem;
+    grid-template-areas: "menu-toggler title user-actions " " menu-toggler breadcrumb breadcrumb ";
+    grid-template-columns: 3.5rem auto 2.5rem;
     grid-column-gap: 0.7rem;
     align-items: center;
     height: auto;
     box-shadow: 0 0.2rem 0.2rem 0 #353b48;
     z-index: 10; }
     header h2.titles {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold; } }
 
 @keyframes alert {
